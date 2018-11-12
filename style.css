@@ -1,0 +1,68 @@
+body {
+    background-image: url('img/bakeryShop.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container {
+    background: #fff;
+    margin-top:30%;
+    border: 1px solid;
+}
+
+  .img-container {
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .store-img {
+    transition: all 1s ease-in-out;
+  }
+  .img-container:hover .store-img {
+    transform: scale(1.2);
+  }
+.cart-info__icon {
+    color: black;
+    cursor: pointer;
+  }
+  .cart-info p {
+    width: 86%;
+  }
+  .cart-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0.1rem solid black;
+    color:white;
+    width: 15%;
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    background: lightblue;
+    border-color: lightblue;
+  }
+  .cart-info:hover {
+    background: pink;
+    border-color: pink;
+    color: white;
+  }
+  .cart-info:hover .cart-info__icon {
+    color:white;
+  }
+  .cart {
+    position: absolute;
+    min-height: 10rem;
+    background: white;
+    top:0;
+    right: 1%;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.8);
+    width: 0;
+    overflow: scroll;
+    max-height: 100%;
+  }
+  .show-cart {
+    margin-top:5%;
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+  }
+  

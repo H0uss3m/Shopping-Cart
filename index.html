@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+        <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - $<span class="item-total">0</span></p>
+      </div>
+      <div id="cart" class="cart">
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> $ <strong id="cart-total" class="font-weight-bold">0</strong> </h5>
+          </div>
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+        </div>
+      </div>
+      <!-- store  items-->
+      <div class="row" class="store-items" id="store-items">
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/sweets.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Macaron</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/cupcake.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> Cupcake</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/cake.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Birthday Cake</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/donut.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Donut</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">11</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/sweets2.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">sweets</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">13.50</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/cupcake2.jpeg" class="card-img-top store-img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Small Cupcake</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                <button class="store-add-btn btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  </section> 
+  
+   <script src="app.js"></script>
+</body>
+
+</html>
